@@ -4,17 +4,14 @@ int main()
     int num,str=num;
     printf("Enter No Row:");
     scanf("%d",&num);
-    int r=num;
-    do
+    
+    for(int r=num;r>=1;r--)
     {
-    	int c=1;
-        do
+        for(int c=1;c<=(r*1);c++)
         {
             printf("%c",c+64);
-            c++;
-        }while(c<=(r*1));
+        }
         printf("\n");
         str--;
-        r--;
-    }while(r>=1);
+    }
 }

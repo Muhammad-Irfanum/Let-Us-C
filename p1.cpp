@@ -4,18 +4,15 @@ int main()
 	int num,str=1;
 	printf("Enter Any NUmber :");
 	scanf("%d",&num);
-	int r=1;
-	while(r<=num)
+	
+	for(int r=1;r<=num;r++)
 	{
-		int c=1;
-		while(c<=str)
+		for(int c=1;c<=str;c++)
 		{
 			printf("%c",c+64);
-			c++;
 		}
 		printf("\n");
 		str++;
-		r++;
 	}
 	
 	

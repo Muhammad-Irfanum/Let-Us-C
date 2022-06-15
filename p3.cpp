@@ -4,18 +4,15 @@ int main()
     int num;
     printf("Enter Num Of Rows");
     scanf("%d",&num);
-    int r=num;
-    while(r>=1)
+    
+    for(int r=num;r>=1;r--)
     {
-    	int c=r;
-        while(c>=1)
+        for(int c=r;c>=1;c--)
         {
         int	sum= 65-1 +c;
             printf("%c",sum);
-            c--;
         }
         printf("\n");
-        r--;
     }
    return 0;
 }

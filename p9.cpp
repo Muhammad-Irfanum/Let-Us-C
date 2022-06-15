@@ -5,27 +5,18 @@ int main()
     printf("Enter No Row:");
     scanf("%d",&num);
     
-    int r=num;
-    while(r>=1)
+    for(int r=num;r>=1;r--)
     {
-    	
-    	int s=1;
-    	while(s<=space)
+    	for(int s=1;s<=space;s++)
     	{
     		printf(" ");
-    		s++;
 		}
-		
-		int c=1;
-        while(c<=(r*1))
+        for(int c=1;c<=(r*1);c++)
         {
             printf("%c",c+64);
-        c++;
-		}
+        }
         printf("\n");
         str--;
         space++;
-    	r--;
-	}
-	return 0;
+    }
 }

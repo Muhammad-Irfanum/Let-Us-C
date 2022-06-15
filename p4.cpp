@@ -5,19 +5,16 @@ int main()
 	printf("Enter Num of Rows :");
 	scanf("%d",&num);
 	
-	int r=1;
-	while(r<=num)
+	for(int r=1;r<=num;r++)
 	{
-		int c=1;
-		while(c<=str)
+		for(int c=1;c<=str;c++)
 		{
 		int	sum=str+64;
 			printf("%c",sum);
-		c++;
+		
 		}
 		printf("\n");
 			str++;
-			r++;
 	}
 	return 0;
 }

@@ -5,25 +5,19 @@ int main()
 	printf("Enter numb Of Rows :");
 	scanf("%d",&num);
 	
-	int r=num;
-	while(r>=1)
+	for(int r=num;r>=1;r--)
 	{
-		int s=1;
-		while(s<=str)
+		for(int s=1;s<=str;s++)
 		{
 			printf(" ");
-			s++;
 		}
-		 int c=num;
-		while(c<=(r*2-1))
+		for( int c=num;c<=(r*2-1);c++)
 		{
 		
 			printf("%c",66);
-			c++;
 		}
 		printf("\n");
 		str++;		
-	r--;
 	}
 	return 0;
 }

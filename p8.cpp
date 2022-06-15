@@ -5,29 +5,21 @@ int main()
 	printf("Enter Num of Rows :");
 	scanf("%d",&num);
 	
-	int r=1;
-	while(r<=num)
+	for(int r=1;r<=num;r++)
 	{
-		
-		int s=1;
-		while(s<=space)
+		for(int s=1;s<=space;s++)
 		{
 			printf(" ");
-		s++;
 		}
-		
-		int c=1;
-			while(c<=str)
+			for(int c=1;c<=str;c++)
 			{
 				printf("%c",c+64);
-				c++;
 			}
 			
 		
 		printf("\n");
 		space--;
 		str++;
-		r++;
 	}
 	
 	return 0;

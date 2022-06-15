@@ -6,24 +6,19 @@ int main()
 	printf("Enter numb of Rows :");
 	scanf("%d",&row);
 	
-	int r=1;
-	while(r<=row)
+	for(int r=1;r<=row;r++)
 	{
 		
 		printf("\t");
 		
-		int c=1;
-		while(c<=row)
+		for(int c=1;c<=row;c++)
 		{
 		printf("%c",alph);
-		c++;
 		}
 	
 		printf("\n");
 		index++;
 		alph++;		
-	r++;
 	}
-	
 	return 0;
 }

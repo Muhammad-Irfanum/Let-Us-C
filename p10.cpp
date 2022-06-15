@@ -4,26 +4,20 @@ int main()
 	int num,str=num,space=6;
 	printf("Enter numb Of Rows :");
 	scanf("%d",&num);
-	int r=1;
-	while(r<=num)
+	
+	for(int r=1;r<=num;r++)
 	{
-		int s=1;
-		while(s<=space)
+		for(int s=1;s<=space;s++)
 		{
 			printf(" ");
-		s++;
 		}
-		
-		int c=1;
-		while(c<=(r*2-1))
+		for( int c=1;c<=(r*2-1);c++)
 		{
 			printf("%c",c+64);
-		c++;
 		}
 		printf("\n");
 		str--;
 		space--;
-	r++;
 	}
 	return 0;
 }
